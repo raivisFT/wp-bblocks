@@ -11,14 +11,14 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define('WPBLOCKS_ROOT_PATH', plugin_dir_path(__FILE__));
-define('WPBLOCKS_ROOT_URL', plugin_dir_url(__FILE__));
+define('WPBOOTBLOCKS_ROOT_PATH', plugin_dir_path(__FILE__));
+define('WPBOOTBLOCKS_ROOT_URL', plugin_dir_url(__FILE__));
 
 /**
  * Register and enqueue Gutenberg Blocks
  */
 function register_tfa_blocks() {
-    $blocksPath = WPBLOCKS_ROOT_PATH . 'build/blocks/';
+    $blocksPath = WPBOOTBLOCKS_ROOT_PATH . 'build/blocks/';
     $iterator = new DirectoryIterator($blocksPath);
     foreach ($iterator as $file) {
         if ($file->isDot()) continue;
@@ -35,10 +35,10 @@ add_action('init', 'register_tfa_blocks');
 function wpdocs_enqueue_custom_public_style() {
 	$name       = 'public';
 	$filepath   = 'build/public/' . $name;
-	$asset_path = WPBLOCKS_ROOT_PATH . $filepath . '.asset.php';
+	$asset_path = WPBOOTBLOCKS_ROOT_PATH . $filepath . '.asset.php';
 	$asset_file = file_exists( $asset_path ) ? include $asset_path : array( 'dependencies' => array(), 'version' => '1.0', );
-	$script_url = WPBLOCKS_ROOT_URL . 'build/style/public.js';
-	$style_url = WPBLOCKS_ROOT_URL . 'build/style/public.scss.css';
+	$script_url = WPBOOTBLOCKS_ROOT_URL . 'build/style/public.js';
+	$style_url = WPBOOTBLOCKS_ROOT_URL . 'build/style/public.scss.css';
 	$v = $asset_file['version'];
 	wp_enqueue_style( 'public-wpbootblocks-style', $style_url, array(), $v, 'all' );
 	//wp_enqueue_script( 'js_bootstrap', '//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js', ['jquery'], '', 'all' );
@@ -52,10 +52,10 @@ add_action( 'wp_enqueue_scripts', 'wpdocs_enqueue_custom_public_style' );
 function wpdocs_enqueue_custom_admin_style() {
 	$name       = 'admin';
 	$filepath   = 'build/' . $name;
-	$asset_path = WPBLOCKS_ROOT_PATH . $filepath . '.asset.php';
+	$asset_path = WPBOOTBLOCKS_ROOT_PATH . $filepath . '.asset.php';
 	$asset_file = file_exists( $asset_path ) ? include $asset_path : array( 'dependencies' => array(), 'version' => '1.0', );
-	$script_url = WPBLOCKS_ROOT_URL . 'build/style/admin.js';
-	$style_url = WPBLOCKS_ROOT_URL . 'build/style/admin.scss.css';
+	$script_url = WPBOOTBLOCKS_ROOT_URL . 'build/style/admin.js';
+	$style_url = WPBOOTBLOCKS_ROOT_URL . 'build/style/admin.scss.css';
 	$v = $asset_file['version'];
 	wp_enqueue_script( 'admin-wpbootblocks-style', $script_url, array(), $v, 'all' );
 	wp_enqueue_style( 'admin-wpbootblocks-style', $style_url, array(), $v, 'all' );
