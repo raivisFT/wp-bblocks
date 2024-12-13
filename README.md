@@ -1,4 +1,4 @@
-# WP Blocks
+# WP Boot Blocks
 WP Block Plugin - Gutenberg / Bootstrap blocks
 
 ### WP BASE BLOCKS:
@@ -31,7 +31,7 @@ WP Block Plugin - Gutenberg / Bootstrap blocks
 - **WP Forms - ACF or F7 Patterns + Options |R**
 ---
 ### DEVELOPERS
-#### DEMO (import XML): inc/demo-WP-wp-blocks.xml
+#### DEMO (import XML): inc/demo-wp-wp-blocks.xml
 
 ***For block build***
 

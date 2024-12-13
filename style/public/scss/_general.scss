@@ -5,7 +5,7 @@ $colors: (
 	grey-dark: #292929,
 	grey-light: #999999,
 	grey-light-bg: #f5f5f5,
-	orange-WP: #FF3B05,
+	orange-wp: #FF3B05,
 	red-alert: #E30613,
 	green: #35BD64
 );
@@ -15,7 +15,7 @@ $black: map-get($colors, black);
 $grey-dark: map-get($colors, grey-dark);
 $grey-light: map-get($colors, grey-light);
 $grey-light-bg: map-get($colors, grey-light-bg);
-$orange-WP: map-get($colors, orange-WP);
+$orange-wp: map-get($colors, orange-wp);
 $red-alert: map-get($colors, red-alert);
 $green: map-get($colors, green);
 
@@ -35,7 +35,7 @@ $green: map-get($colors, green);
 
 .wp-block {
 
-	&-WP {
+	&-wp {
 
 		&-row-section {
 			position: relative;
@@ -188,7 +188,7 @@ $green: map-get($colors, green);
 	opacity: 0.9;
 }
 
-.wp-block-WP-button-boot {
+.wp-block-wp-button-boot {
 
 	.btn {
 		max-width: fit-content;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	@for $i from 0 through 12 {
 
-		.wp-block-WP-colum.order-xl-#{$i} {
+		.wp-block-wp-colum.order-xl-#{$i} {
 			order: $i !important;
 		}
 	}
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	@for $i from 0 through 12 {
 
-		.wp-block-WP-colum.order-lg-#{$i} {
+		.wp-block-wp-colum.order-lg-#{$i} {
 			order: $i !important;
 		}
 	}
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	@for $i from 0 through 12 {
 
-		.wp-block-WP-colum.order-md-#{$i} {
+		.wp-block-wp-colum.order-md-#{$i} {
 			order: $i !important;
 		}
 	}
