@@ -1,9 +1,9 @@
 {
 	"apiVersion": 3,
-	"name": "WP/column",
+	"name": "wp/column",
 	"title": "Column",
 	"category": "text",
-	"parent": [ "WP/row-section" ],
+	"parent": [ "wp/row-section" ],
 	"description": "A single column within a columns block.",
 	"textdomain": "default",
 	"attributes": {

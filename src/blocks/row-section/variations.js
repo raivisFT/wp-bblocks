@@ -31,7 +31,7 @@
 			 </SVG>
 		 ),
 		 isDefault: true,
-		 innerBlocks: [ [ 'WP/column' , {width: 'full'} ] ],
+		 innerBlocks: [ [ 'wp/column' , {width: 'full'} ] ],
 		 scope: [ 'block' ],
 	 },
 	 {
@@ -53,7 +53,7 @@
 			 </SVG>
 		 ),
 		 isDefault: true,
-		 innerBlocks: [ [ 'WP/column' , {width: 'half'} ], [ 'WP/column' , {width: 'half'} ] ],
+		 innerBlocks: [ [ 'wp/column' , {width: 'half'} ], [ 'wp/column' , {width: 'half'} ] ],
 		 scope: [ 'block' ],
 	 },
 	 {
@@ -75,7 +75,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'three'} ], [ 'WP/column' , {width: 'three'} ], [ 'WP/column' , {width: 'three'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'three'} ], [ 'wp/column' , {width: 'three'} ], [ 'wp/column' , {width: 'three'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -97,7 +97,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'quarter'}], [ 'WP/column' , {width: 'quarter'} ], [ 'WP/column' , {width: 'quarter'} ], [ 'WP/column' , {width: 'quarter'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'quarter'}], [ 'wp/column' , {width: 'quarter'} ], [ 'wp/column' , {width: 'quarter'} ], [ 'wp/column' , {width: 'quarter'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -119,7 +119,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'five'}], [ 'WP/column' , {width: 'five'} ], [ 'WP/column' , {width: 'five'} ], [ 'WP/column' , {width: 'five'} ], [ 'WP/column' , {width: 'five'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'five'}], [ 'wp/column' , {width: 'five'} ], [ 'wp/column' , {width: 'five'} ], [ 'wp/column' , {width: 'five'} ], [ 'wp/column' , {width: 'five'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -141,7 +141,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'six'}], [ 'WP/column' , {width: 'six'} ], [ 'WP/column' , {width: 'six'} ], [ 'WP/column' , {width: 'six'} ], [ 'WP/column' , {width: 'six'} ], [ 'WP/column' , {width: 'six'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'six'}], [ 'wp/column' , {width: 'six'} ], [ 'wp/column' , {width: 'six'} ], [ 'wp/column' , {width: 'six'} ], [ 'wp/column' , {width: 'six'} ], [ 'wp/column' , {width: 'six'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -163,7 +163,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'seven'}], [ 'WP/column' , {width: 'seven'} ], [ 'WP/column' , {width: 'seven'} ], [ 'WP/column' , {width: 'seven'} ], [ 'WP/column' , {width: 'seven'} ], [ 'WP/column' , {width: 'seven'} ], [ 'WP/column' , {width: 'seven'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'seven'}], [ 'wp/column' , {width: 'seven'} ], [ 'wp/column' , {width: 'seven'} ], [ 'wp/column' , {width: 'seven'} ], [ 'wp/column' , {width: 'seven'} ], [ 'wp/column' , {width: 'seven'} ], [ 'wp/column' , {width: 'seven'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -185,7 +185,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'eight'}], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ], [ 'WP/column' , {width: 'eight'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'eight'}], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ], [ 'wp/column' , {width: 'eight'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -207,7 +207,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'nine'}], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ], [ 'WP/column' , {width: 'nine'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'nine'}], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ], [ 'wp/column' , {width: 'nine'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -229,7 +229,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'ten'}], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ], [ 'WP/column' , {width: 'ten'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'ten'}], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ], [ 'wp/column' , {width: 'ten'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -251,7 +251,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'eleven'}], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ], [ 'WP/column' , {width: 'eleven'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'eleven'}], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ], [ 'wp/column' , {width: 'eleven'} ] ],
 		scope: [ 'block' ],
 	},
 	{
@@ -273,7 +273,7 @@
 			</SVG>
 		),
 		isDefault: true,
-		innerBlocks: [ [ 'WP/column' , {width: 'twelve'}], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ], [ 'WP/column' , {width: 'twelve'} ] ],
+		innerBlocks: [ [ 'wp/column' , {width: 'twelve'}], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ], [ 'wp/column' , {width: 'twelve'} ] ],
 		scope: [ 'block' ],
 	},
  ];

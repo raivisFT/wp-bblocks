@@ -1,6 +1,6 @@
 {
 	"apiVersion": 2,
-	"name": "WP/btn-boot",
+	"name": "wp/btn-boot",
 	"title": "WP Button",
 	"category": "design",
 	"description": "Bootstrap & Custom Style Buttons also modal",

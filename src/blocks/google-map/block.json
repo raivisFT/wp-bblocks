@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "WP/google-map",
+	"name": "wp/google-map",
 	"title": "WP Google map",
 	"category": "design",
 	"description": "WP Google map generator",

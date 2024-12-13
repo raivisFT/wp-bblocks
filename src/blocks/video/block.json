@@ -1,6 +1,6 @@
 {
 	"apiVersion": 3,
-	"name": "WP/WP-video",
+	"name": "wp/WP-video",
 	"title": "WP Video",
 	"category": "media",
 	"description": "WP Video embed",

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "WP/main-menu-block",
+	"name": "wp/main-menu-block",
 	"title": "WP PHP Main Menu",
 	"category": "design",
 	"description": "WP PHP Main Menu generator",

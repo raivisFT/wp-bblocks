@@ -18,7 +18,7 @@
   * @constant
   * @type {string[]}
   */
- const ALLOWED_BLOCKS = [ 'WP/column' ];
+ const ALLOWED_BLOCKS = [ 'wp/column' ];
  
  function ColumnsEditContainer( {
 	 attributes,

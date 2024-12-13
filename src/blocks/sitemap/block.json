@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "WP/sitemap-block",
+	"name": "wp/sitemap-block",
 	"title": "WP PHP Sitemap",
 	"category": "design",
 	"description": "WP PHP Sitemap generator",

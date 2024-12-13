@@ -1,6 +1,6 @@
 {
 	"apiVersion": 3,
-	"name": "WP/row-section",
+	"name": "wp/row-section",
 	"title": "WP Container Row&Columns",
 	"category": "design",
 	"description": "Bootstrap - Container > Row > Columns",

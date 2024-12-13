@@ -1,12 +1,12 @@
 <?php
 /**
- * Server-side rendering of the `WP/post-acf-field` block.
+ * Server-side rendering of the `wp/post-acf-field` block.
  *
  * @package WordPress
  */
 
 /**
- * Renders the `WP/post-acf-field` block on the server.
+ * Renders the `wp/post-acf-field` block on the server.
  *
  * @param  array    $attributes Block attributes.
  * @param  string   $content    Block default content.
@@ -36,7 +36,7 @@ function render_block_tfa_post_acf_field( $attributes, $content, $block ) {
 }
 
 /**
- * Registers the `WP/post-acf-field` block on the server.
+ * Registers the `wp/post-acf-field` block on the server.
  */
 function register_block_tfa_post_acf_field() {
 	register_block_type_from_metadata(
