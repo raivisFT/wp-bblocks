@@ -1,0 +1,83 @@
+{
+	"apiVersion": 2,
+	"name": "WP/btn-boot",
+	"title": "WP Button",
+	"category": "design",
+	"description": "Bootstrap & Custom Style Buttons also modal",
+	"textdomain": "default",
+	"attributes": {
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href"
+		},
+		"buttonText" : {
+			"type": "string",
+			"source": "text",
+			"selector": "a"
+		},
+		"borderColor": {
+			"type": "string",
+			"default": ""
+		},
+		"txtColor": {
+			"type": "string",
+			"default": ""
+		},
+		"bgColor": {
+			"type": "string",
+			"default": ""
+		},
+		"bRadius": {
+			"type": "string",
+			"default": "0"
+		},
+		"bSize": {
+			"type": "string",
+			"default": "0"
+		},
+		"bootAlign": {
+			"type": "string",
+			"default": ""
+		},
+		"bootClass": {
+			"type": "string",
+			"default": ""
+		},
+		"bootOutlineClass": {
+			"type": "string",
+			"default": ""
+		},
+		"bootSizesClass": {
+			"type": "string",
+			"default": ""
+		},
+		"bootPopClass": {
+			"type": "string",
+			"default": ""
+		},
+		"linkTarget": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "target"
+		},
+		"rel": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "rel"
+		},
+		"placeholder": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": true,
+		"html": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

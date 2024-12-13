@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "WP/post-acf-field",
+	"title": "Post ACF Field",
+	"category": "theme",
+	"description": "Display an ACF field attached to the post.",
+	"textdomain": "default",
+	"attributes": {
+		"fieldName": {
+			"type": "string"
+		},
+		"option": {
+			"type":"string",
+			"default":"page"
+		}
+	},
+	"usesContext": [ "postType", "postId", "queryId" ],
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"editorScript": "file:./index.php",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,9 @@
+.count-up {
+    max-width: fit-content;
+    text-align: left;
+    margin: 0 auto;
+
+    &__wrap {
+        display: inline-block;
+    }
+}

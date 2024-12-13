@@ -1,0 +1,219 @@
+{
+	"apiVersion": 3,
+	"name": "WP/column",
+	"title": "Column",
+	"category": "text",
+	"parent": [ "WP/row-section" ],
+	"description": "A single column within a columns block.",
+	"textdomain": "default",
+	"attributes": {
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},		
+		"bgAttach": {
+			"type": "boolean",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"overColor": {
+			"type": "string",
+			"default": ""
+		},
+		"bgStyle": {
+			"type": "string",
+			"default": ""
+		},
+		"verticalAlignment": {
+			"type": "string"
+		},
+		"contentAlign": {
+			"type": "string",
+			"default": ""
+		},
+		"width": {
+			"type": "string"
+		},
+		"templateLock": {
+			"enum": [ "all", "insert", false ]
+		},
+		"verticalAlign": {
+			"type": "string",
+			"default": "align-self-center"
+		},
+		"sizeSmallLaptop": {
+			"type": "string",
+			"default": ""
+		},
+		"sizeLargeTablet": {
+			"type": "string",
+			"default": ""
+		},
+		"sizeTablet": {
+			"type": "string",
+			"default": ""
+		},
+		"sizeMob": {
+			"type": "string",
+			"default": ""
+		},
+		"colOffsetMain": {
+			"type": "string",
+			"default": ""
+		},
+		"colOffsetXL": {
+			"type": "string",
+			"default": ""
+		},
+		"colOffsetLG": {
+			"type": "string",
+			"default": ""
+		},
+		"colOffsetMD": {
+			"type": "string",
+			"default": ""
+		},
+		"colOffsetSM": {
+			"type": "string",
+			"default": ""
+		},
+		"colOrderMain": {
+			"type": "string",
+			"default": ""
+		},
+		"colOrderXL": {
+			"type": "string",
+			"default": ""
+		},
+		"colOrderLG": {
+			"type": "string",
+			"default": ""
+		},
+		"colOrderMD": {
+			"type": "string",
+			"default": ""
+		},
+		"colOrderSM": {
+			"type": "string",
+			"default": ""
+		},
+		"allHidden": {
+			"type": "string",
+			"default": ""
+		},
+		"xlHidden": {
+			"type": "string",
+			"default": ""
+		},
+		"lgHidden": {
+			"type": "string",
+			"default": ""
+		},
+		"mdHidden": {
+			"type": "string",
+			"default": ""
+		},
+		"smHidden": {
+			"type": "string",
+			"default": ""
+		},
+		"topPadding": {
+			"type": "string",
+			"default": ""
+		},
+		"rightPadding": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPadding": {
+			"type": "string",
+			"default": ""
+		},
+		"leftPadding": {
+			"type": "string",
+			"default": ""
+		},
+		"topPaddingXL": {
+			"type": "string",
+			"default": ""
+		},
+		"rightPaddingXL": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPaddingXL": {
+			"type": "string",
+			"default": ""
+		},
+		"leftPaddingXL": {
+			"type": "string",
+			"default": ""
+		},
+		"topPaddingLG": {
+			"type": "string",
+			"default": ""
+		},
+		"rightPaddingLG": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPaddingLG": {
+			"type": "string",
+			"default": ""
+		},
+		"leftPaddingLG": {
+			"type": "string",
+			"default": ""
+		},
+		"topPaddingMD": {
+			"type": "string",
+			"default": ""
+		},
+		"rightPaddingMD": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPaddingMD": {
+			"type": "string",
+			"default": ""
+		},
+		"leftPaddingMD": {
+			"type": "string",
+			"default": ""
+		},
+		"topPaddingSM": {
+			"type": "string",
+			"default": ""
+		},
+		"rightPaddingSM": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPaddingSM": {
+			"type": "string",
+			"default": ""
+		},
+		"leftPaddingSM": {
+			"type": "string",
+			"default": ""
+		},
+		"colBRadius": {
+			"type": "string",
+			"default": ""
+		},
+		"colID": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"reusable": true,
+		"anchor": true,
+		"align": true,
+		"html": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

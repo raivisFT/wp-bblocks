@@ -1,0 +1,71 @@
+{
+	"apiVersion": 3,
+	"name": "WP/WP-cta",
+	"title": "WP CTA",
+	"category": "design",
+	"description": "WP Call To Action ",
+	"textdomain": "default",
+	"attributes": {
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"linkTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+		"altText": {
+			"type": "string",
+			"default": ""
+		},
+		"btnText": {
+			"type": "string",
+			"default": ""
+		},
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"cardTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": "strong"
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "black"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"contentStyle": {
+			"type": "string",
+			"default": ""
+		},
+		"columnAlign": {
+			"type": "string",
+			"default": "text-left"
+		},
+		"btnOnOff": {
+			"type": "string",
+			"default": "btnoff"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"reusable": false,
+		"html": true,
+		"spacing": {
+			"padding": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

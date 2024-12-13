@@ -1,0 +1,37 @@
+{
+	"apiVersion": 3,
+	"name": "WP/count-up",
+	"title": "WP Count Up",
+	"category": "design",
+	"description": "WP Count Up element",
+	"textdomain": "default",
+	"attributes": {
+		"srcNumber": {
+			"type": "string",
+			"default": "0"
+		},
+		"numColor": {
+			"type": "string",
+			"default": "black"
+		},
+		"srcCaption": {
+			"type": "string",
+			"default": ""
+		},
+		"capColor": {
+			"type": "string",
+			"default": "black"
+		},
+		"txtCenter": {
+			"type": "string",
+			"default": "text-align:left"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": true,
+		"html": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

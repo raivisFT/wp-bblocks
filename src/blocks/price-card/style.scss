@@ -1,0 +1,25 @@
+.wp-block-WP{
+    
+    &-WP-price-card {
+        span {
+            &.text-uppercase {
+                text-transform: uppercase;
+            }
+            &.text-lowercase {
+                text-transform: lowercase;
+            }
+            &.text-capitalize {
+                text-transform: capitalize;
+            }
+
+            &.fw-bold {
+                font-weight: 700;
+            }
+
+            &.fw-normal {
+                font-weight: 400;
+            }
+        }
+    }
+
+}
