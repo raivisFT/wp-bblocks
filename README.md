@@ -1,4 +1,4 @@
-# WP Boot Blocks
+# WP Bootstrap / Gutenberg / ACF Blocks
 WP Block Plugin - Gutenberg / Bootstrap blocks
 
 ### WP BASE BLOCKS:
