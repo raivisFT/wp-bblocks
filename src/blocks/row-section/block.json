@@ -2,8 +2,8 @@
 	"apiVersion": 3,
 	"name": "wp/row-section",
 	"title": "WP Container Row&Columns",
-	"category": "design",
-	"description": "Bootstrap - Container > Row > Columns",
+	"category": "WP-layout",
+	"description": "Add container rows and columns with Bootstrap-style layout control.",
 	"textdomain": "default",
 	"attributes": {
 		"url": {
@@ -295,6 +295,10 @@
 		"anchor": true,
 		"align": true,
 		"html": true
+	},
+	"example": {
+		"attributes": {
+		}
 	},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css"

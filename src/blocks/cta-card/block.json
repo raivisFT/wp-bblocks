@@ -2,8 +2,8 @@
 	"apiVersion": 3,
 	"name": "wp/cta-card",
 	"title": "WP CTA Card",
-	"category": "design",
-	"description": "Call to action card",
+	"category": "WP-content",
+	"description": "Add a call-to-action card with image, text, and button.",
 	"textdomain": "default",
 	"attributes": {
 		"url": {
@@ -55,6 +55,34 @@
 		"btnOnOff": {
 			"type": "string",
 			"default": "btnoff"
+		},
+		"tagH": {
+			"type": "string",
+			"default": "strong"
+		}, 
+		"tagHclass": {
+			"type": "string",
+			"default": "h3"
+		}, 
+		"imgOrgProp": {
+			"type": "string",
+			"default": ""
+		}, 
+		"contentOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"titleOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"priceOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"isSchema": {
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"supports": {
@@ -65,6 +93,24 @@
 			"padding": true
 		}
 	},
+	"example": {
+		"attributes": {
+			"cardTitle": "Example Card Heading",
+			"content": "This is example content for the CTA card. It gives context to the user.",
+			"btnText": "Learn More",
+			"url": "#",
+			"linkTarget": "_blank",
+			"mediaUrl": "/wp-content/uploads/2025/05/home-video-bg-s-e1746716944364.webp",
+			"altText": "Example Image",
+			"titleColor": "#000000",
+			"contentStyle": "",
+			"columnAlign": "text-left",
+			"btnOnOff": "btnon",
+			"tagH": "strong",
+			"tagHclass": "h3"
+		}
+	},
+
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

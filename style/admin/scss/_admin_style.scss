@@ -117,7 +117,8 @@ body {
 
 									.block-list-appender,
 									& > .wp-block {
-										min-width: calc(100% - 10px) !important;
+										min-width: fit-content !important;
+										padding: 0 !important;
 										margin-left: 0;
 										width: 100%;
 									}
@@ -138,6 +139,10 @@ body {
 
 								.block-editor-block-list__layout {
 									width: 100%;
+								}
+
+								.block-editor-block-list__block.wp-block-list {
+									margin-left: 15px;
 								}
 
 								& ~ .wp-block {
@@ -299,5 +304,9 @@ body {
 			}
 		
 		}
+	}
+
+	section .desc {
+		margin-bottom: 15px;
 	}
 }

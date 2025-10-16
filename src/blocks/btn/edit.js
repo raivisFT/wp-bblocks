@@ -5,6 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { useCallback, useState, useRef } from '@wordpress/element';
 import { __experimentalInputControl as InputControl, KeyboardShortcuts, ToolbarButton, Popover, SelectControl, PanelBody, ColorPalette } from '@wordpress/components';
 import { BlockControls, RichText, useBlockProps, InspectorControls, __experimentalLinkControl as LinkControl } from '@wordpress/block-editor';
+import { useBlockEditContext } from '@wordpress/block-editor';
 import { rawShortcut, displayShortcut } from '@wordpress/keycodes';
 import { link, linkOff } from '@wordpress/icons';
 import './editor.scss';
@@ -107,18 +108,94 @@ function edit( props ) {
 		// Remove anchor tags from button text content.
 		setAttributes( { buttonText: newText.val.replace( /<\/?a[^>]*>/g, '' ) } );
 	};
+
+	const style = {
+		...(borderColor ? { borderColor: borderColor } : {}),
+		...(bgColor ? { backgroundColor: bgColor } : {}),
+		...(txtColor ? { color: txtColor } : {}),
+	};
+
 	const ref = useRef();
-	const blockProps = useBlockProps({ ref });
+	const blockProps = useBlockProps({
+		ref,
+		style,
+	});
 	const colors = [
 		{ name: 'black', color: 'black' },
 		{ name: 'white', color: 'white' },		
 	];
 
+	const { isPreview } = useBlockEditContext();
+
+	// If rendering preview in block inserter
+	if (isPreview) {
+		return (
+			<div { ...blockProps } >
+			</div>
+		);
+	}
+
 	return (
 		<>
 			<InspectorControls key="setting">
 				<PanelBody title={__('Button Style', 'WP')} initialOpen={true}	>
-					<h3>Background Colour</h3>
+
+					<h3>Text Colour</h3>
+					<ColorPalette
+						label="Text Colour"
+						colors={ colors }
+						value={ txtColor }
+						enableAlpha
+						onChange={ ( colors ) => setAttributes( { txtColor: colors } ) }
+					/>
+					<InputControl
+						label="Border Width px"
+						value={bSize}
+						type="number"
+						min={0}
+						isPressEnterToChange
+						onChange={(newSize) => setAttributes({ bSize: newSize })}
+					/>
+					<SelectControl
+						label="Background Style"
+						value={ bootClass }
+						options={ [
+							{ label: 'Primary', value: 'btn-primary' },
+							{ label: 'Secondary', value: 'btn-secondary' },
+							{ label: 'Light', value: 'btn-light' },
+							{ label: 'Dark', value: 'btn-dark' }
+						] }
+						onChange={ ( newStyle ) => setAttributes( { bootClass: newStyle } ) }
+					/>
+					<SelectControl
+						label="Border Style"
+						value={ bootOutlineClass }
+						options={ [
+							{ label: 'None', value: '' },
+							{ label: 'Primary Outline', value: 'btn-outline-primary' },
+							{ label: 'Secondary Outline', value: 'btn-outline-secondary' },
+							{ label: 'Light Outline', value: 'btn-outline-light' },
+							{ label: 'Dark Outline', value: 'btn-outline-dark' }
+						] }
+						onChange={ ( newStyle ) => setAttributes( { bootOutlineClass: newStyle } ) }
+					/>
+					<SelectControl
+						label="Button Size"
+						value={ bootSizesClass }
+						options={ [
+							{ label: 'None', value: '' },
+							{ label: 'Large', value: 'btn-lg' },
+							{ label: 'Small', value: 'btn-sm' }
+						] }
+						onChange={ ( newStyle ) => setAttributes( { bootSizesClass: newStyle } ) }
+					/>
+				</PanelBody>
+				<PanelBody
+					title={__('Developer Settings', 'WP')}
+					initialOpen={false}
+					className="block-editor-block-advanced-panel"
+				>
+					<h3>Custom Background Colour</h3>
 					<ColorPalette
 						label="Background Colour"
 						colors={ colors }
@@ -126,15 +203,7 @@ function edit( props ) {
 						enableAlpha
 						onChange={ ( colors ) => setAttributes( { bgColor: colors } ) }
 					/>
-					<h3>Text Colour</h3>
-					<ColorPalette
-						label="Background Colour"
-						colors={ colors }
-						value={ txtColor }
-						enableAlpha
-						onChange={ ( colors ) => setAttributes( { txtColor: colors } ) }
-					/>
-					<h3>Border Colour</h3>
+					<h3>Custom Border Colour</h3>
 					<ColorPalette
 						label="Background Colour"
 						colors={ colors }
@@ -144,64 +213,11 @@ function edit( props ) {
 					/>
 					<InputControl
 						label="Border Radius px"
-						value={ bRadius }
+						value={bRadius}
 						type="number"
-						min={ 0 }
+						min={0}
 						isPressEnterToChange
-						onChange={ ( newbR ) => setAttributes({ bRadius: newbR }) }
-					/>
-					<InputControl
-						label="Border Size px"
-						value={ bSize }
-						type="number"
-						min={ 0 }
-						isPressEnterToChange
-						onChange={ ( newSize ) => setAttributes({ bSize: newSize }) }
-					/>
-					<SelectControl
-						label="Filled Style"
-						value={ bootClass }
-						options={ [
-							{ label: 'None', value: '' },
-							{ label: 'Primary', value: 'btn-primary' },
-							{ label: 'Secondary', value: 'btn-secondary' },
-							{ label: 'Ligt', value: 'btn-light' },
-							{ label: 'Dark', value: 'btn-dark' },
-							{ label: 'Link', value: 'btn-link' }
-						] }
-						onChange={ ( newStyle ) => setAttributes( { bootClass: newStyle } ) }
-					/>
-					<SelectControl
-						label="Align Horizontally"
-						value={ bootAlign }
-						options={ [
-							{ label: 'Left', value: '' },
-							{ label: 'Center', value: 'btn-center' },
-							{ label: 'Right', value: 'btn-right' }
-						] }
-						onChange={ ( newStyle ) => setAttributes( { bootAlign: newStyle } ) }
-					/>
-					<SelectControl
-						label="Outline Style"
-						value={ bootOutlineClass }
-						options={ [
-							{ label: 'None', value: '' },
-							{ label: 'Primary Outline', value: 'btn-outline-primary' },
-							{ label: 'Secondary Outline', value: 'btn-outline-secondary' },
-							{ label: 'Ligt Outline', value: 'btn-outline-light' },
-							{ label: 'Dark Outline', value: 'btn-outline-dark' }
-						] }
-						onChange={ ( newStyle ) => setAttributes( { bootOutlineClass: newStyle } ) }
-					/>
-					<SelectControl
-						label="Sizes"
-						value={ bootSizesClass }
-						options={ [
-							{ label: 'None', value: '' },
-							{ label: 'Large', value: 'btn-lg' },
-							{ label: 'Small', value: 'btn-sm' }
-						] }
-						onChange={ ( newStyle ) => setAttributes( { bootSizesClass: newStyle } ) }
+						onChange={(newbR) => setAttributes({ bRadius: newbR })}
 					/>
 					<SelectControl
 						label="PopUp / Modal Box"
@@ -211,6 +227,16 @@ function edit( props ) {
 							{ label: 'Yes', value: 'open-popup-link' }
 						] }
 						onChange={ ( newStyle ) => setAttributes( { bootPopClass: newStyle } ) }
+					/>
+					<SelectControl
+						label="Text Align Horizontally"
+						value={ bootAlign }
+						options={ [
+							{ label: 'Center', value: 'text-center' },
+							{ label: 'Left', value: 'text-start' },
+							{ label: 'Right', value: 'text-end' }
+						] }
+						onChange={ ( newStyle ) => setAttributes( { bootAlign: newStyle } ) }
 					/>
 				</PanelBody>
 			</InspectorControls>
@@ -223,7 +249,8 @@ function edit( props ) {
 					value={ buttonText }
 					onChange={ ( val ) => setButtonText( { val } ) }
 					withoutInteractiveFormatting={true}
-					allowedFormats={ [ ] }
+					allowedFormats={ [] }
+					onSplit={ () => {} }
 					identifier="buttonText"
 				/>
 			</div>

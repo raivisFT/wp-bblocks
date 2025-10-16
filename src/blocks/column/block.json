@@ -3,7 +3,6 @@
 	"name": "wp/column",
 	"title": "Column",
 	"category": "text",
-	"parent": [ "wp/row-section" ],
 	"description": "A single column within a columns block.",
 	"textdomain": "default",
 	"attributes": {

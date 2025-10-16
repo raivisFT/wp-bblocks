@@ -1,9 +1,9 @@
 {
 	"apiVersion": 3,
-	"name": "wp/WP-video",
-	"title": "WP Video",
-	"category": "media",
-	"description": "WP Video embed",
+	"name": "wp/wp-video",
+	"title": "Youtube Video",
+	"category": "WP-content",
+	"description": "Youtube Video embed",
 	"textdomain": "default",
 	"attributes": {
 		"srcUrl": {

@@ -9,7 +9,7 @@ export default function edit( { attributes, setAttributes } ) {
 		{ name: 'transparent', color: 'transparent' },
 		{ name: 'white', color: '#fff' },		
 	];
-	const wrapperClasses = classnames( 'WP-video__wrap' );
+	const wrapperClasses = classnames( 'wp-video__wrap' );
 	const blockProps = useBlockProps( {
 		className: classnames( {
 		} ),
@@ -49,9 +49,9 @@ export default function edit( { attributes, setAttributes } ) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<div className="WP-video" { ...blockProps }>
+			<div className="wp-video" { ...blockProps }>
 				<hr />
-				<p className="WP-video--code"><b>YouTube URL</b> ( Current height: { srcHeight }px ): <a href={ 'https://www.youtube.com/embed/' + srcUrl } target="_blank">Open Video</a> | Path: ".../embed/{ srcUrl }"</p>
+				<p className="wp-video--code"><b>YouTube URL</b> ( Current height: { srcHeight }px ): <a href={ 'https://www.youtube.com/embed/' + srcUrl } target="_blank">Open Video</a> | Path: ".../embed/{ srcUrl }"</p>
 				<hr />
 				<div className={ wrapperClasses }><iframe src={'https://www.youtube.com/embed/'+ srcUrl } width="100%" height={ srcHeight } title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{ 'border': 'solid ' + srcBorderColor + ' ' + srcBorderWidth + 'px' }}></iframe></div>
 			</div>

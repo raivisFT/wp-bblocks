@@ -1,0 +1,18 @@
+{
+    "name": "acf/parallax",
+    "title": "Parallax Vertical Slider",
+    "description": "Swiper - vertical direction slide & animated section",
+    "category": "freetimers-content",
+    "icon": "id",
+    "keywords": ["parallax"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "mode": false
+    },
+    "version": "2.0.0"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "acf/authorx",
+    "title": "Author Info X.com",
+    "description": "Display an author's info and picture.",
+    "icon": "id",
+    "keywords": ["author", "writer"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "mode": false
+    },
+    "version": "2.0.0"
+}

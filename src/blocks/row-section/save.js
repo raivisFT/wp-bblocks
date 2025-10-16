@@ -10,7 +10,7 @@
  
  export default function save( { attributes } ) {
 
-	 const { bgAttach, mediaUrl, overColor, contBoxed, rowWidth, rowWidthXL, rowWidthLG, rowWidthMD, rowWidthSM, rowWidthVal, rowWidthValXL, rowWidthValLG, rowWidthValMD, rowWidthValSM, bgStyle, topPadding, topPaddingXL, topPaddingLG, topPaddingMD, topPaddingSM, botPadding, botPaddingXL, botPaddingLG, botPaddingMD, botPaddingSM, topMargin, rightMargin, bottomMargin, leftMargin, topMarginXD, rightMarginXD, bottomMarginXD, leftMarginXD, topMarginLG, rightMarginLG, bottomMarginLG, leftMarginLG, topMarginMD, rightMarginMD, bottomMarginMD, leftMarginMD, topMarginSM, rightMarginSM, bottomMarginSM, leftMarginSM, isAnimated, isAnimation, isSlider, isSliderAutoplay, isInline, allHidden, xlHidden, lgHidden, mdHidden, smHidden, childCount, verticalAlignment, isStackedOnMobile } = attributes;
+	 const { bgAttach, mediaUrl, overColor, contBoxed, rowWidth, rowWidthXL, rowWidthLG, rowWidthMD, rowWidthSM, rowWidthVal, rowWidthValXL, rowWidthValLG, rowWidthValMD, rowWidthValSM, bgStyle, topPadding, topPaddingXL, topPaddingLG, topPaddingMD, topPaddingSM, botPadding, botPaddingXL, botPaddingLG, botPaddingMD, botPaddingSM, topMargin, rightMargin, bottomMargin, leftMargin, topMarginXD, rightMarginXD, bottomMarginXD, leftMarginXD, topMarginLG, rightMarginLG, bottomMarginLG, leftMarginLG, topMarginMD, rightMarginMD, bottomMarginMD, leftMarginMD, topMarginSM, rightMarginSM, bottomMarginSM, leftMarginSM, isAnimated, isAnimation, isSlider, isSliderAutoplay, isSliderRepeat, isInline, allHidden, xlHidden, lgHidden, mdHidden, smHidden, childCount, verticalAlignment, isStackedOnMobile } = attributes;
  
 	 let layoutClass;
  
@@ -84,6 +84,7 @@
 		botPaddingSM && ('pb-sm-' + botPaddingSM),
 		isAnimation,
 		isSliderAutoplay,
+		isSliderRepeat,
 		//topMargin && ('mt-' + topMargin),
 		//rightMargin && ('mr-' + rightMargin),
 		//bottomMargin && ('mb-' + bottomMargin),

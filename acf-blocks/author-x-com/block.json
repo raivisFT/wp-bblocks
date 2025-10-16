@@ -1,0 +1,16 @@
+{
+    "name": "acf/xcom",
+    "title": "Author X",
+    "description": "Display an author's X link.",
+    "icon": "X",
+    "keywords": ["author", "X"],
+    "acf": {
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "anchor": false,
+        "align": false
+    },
+    "parent": [ "acf/authorx" ],
+    "version": "2.0.0"
+}

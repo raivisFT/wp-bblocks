@@ -2,12 +2,12 @@
 <div class="<?= $blockClass ?> foo-menu-block__content">
 	<!-- PHP variables -->
 	<?php
-		$tfa_footer_menu = array(
-			'theme_location' => 'WP-footer-menu',
+		$wp_footer_menu = array(
+			'theme_location' => 'wp-footer-menu',
 			'container' => 'nav',
-			'container_class' => 'WP-footer-menu-container--list',						
-			'container_id' => 'WP-footer-menu',
-			'menu_class' => 'WP-footer-menu-container',
+			'container_class' => 'wp-footer-menu-container--list',						
+			'container_id' => 'wp-footer-menu',
+			'menu_class' => 'wp-footer-menu-container',
 			'fallback_cb' => '__return_false',
 			'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
 			'depth' => 1, // 1 = no dropdowns, 2+ dropdowns
@@ -18,7 +18,7 @@
 			'walker' => new bootstrap_5_wp_nav_menu_walker()
 		) ?? '';
 
-		wp_nav_menu( $tfa_footer_menu );
+		wp_nav_menu( $wp_footer_menu );
 	?>
 	<!-- // PHP variables -->
 </div>

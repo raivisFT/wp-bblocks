@@ -2,8 +2,8 @@
 	"apiVersion": 2,
 	"name": "wp/btn-boot",
 	"title": "WP Button",
-	"category": "design",
-	"description": "Bootstrap & Custom Style Buttons also modal",
+	"category": "WP-content",
+	"description": "Add a customizable button with optional link, text, and styling.\n",
 	"textdomain": "default",
 	"attributes": {
 		"url": {
@@ -77,6 +77,25 @@
 		"anchor": true,
 		"align": true,
 		"html": true
+	},
+	"example": {
+		"attributes": {
+			"buttonText": "Click Here",
+			"url": "#",
+			"borderColor": "#000",
+			"txtColor": "#ccc",
+			"bgColor": "#000",
+			"bRadius": "0",
+			"bSize": "1",
+			"bootClass": "btn",
+			"bootOutlineClass": "",
+			"bootSizesClass": "btn-md",
+			"bootPopClass": "",
+			"bootAlign": "center",
+			"linkTarget": "_blank",
+			"rel": "noopener noreferrer",
+			"placeholder": "Button Text"
+		}
 	},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css"

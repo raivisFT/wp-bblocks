@@ -8,7 +8,7 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 export default function save({ attributes }) {
 	
 	const { mediaUrl, url, ctaBrdRd, srcBrdRd, swapCol, contDiv, bgColor, altText, btnText, btnOnOff } = attributes;
-	const wrapperClasses = classnames( 'WP-cta' );
+	const wrapperClasses = classnames( 'wp-cta' );
 
 
 	

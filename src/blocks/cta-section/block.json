@@ -1,9 +1,9 @@
 {
 	"apiVersion": 3,
 	"name": "wp/cta-section",
-	"title": "WP CTA",
+	"title": "WP CTA Section",
 	"category": "design",
-	"description": "WP Call To Action ",
+	"description": "WP Call To Action Banner",
 	"textdomain": "default",
 	"attributes": {
 		"url": {

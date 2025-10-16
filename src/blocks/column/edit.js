@@ -22,10 +22,14 @@ function ColumnEdit( {
 	
 	const useInnerBlocksProps = __stableUseInnerBlocksProps ? __stableUseInnerBlocksProps : __experimentalUseInnerBlocksProps;
 
-	const classes = classnames( 'block-core-columns', {
-		[ `is-vertically-aligned-${ verticalAlignment }` ]: verticalAlignment,
-		[ `${ verticalAlign }` ]: verticalAlign,
-	} );
+	const classes = classnames(
+		'block-core-columns',
+		{
+			[`is-vertically-aligned-${verticalAlignment}`]: verticalAlignment,
+			[verticalAlign]: verticalAlign,
+			'bg-image': mediaUrl,  // add this conditionally
+		}
+	);
 
 	const { columnsIds, hasChildBlocks, rootClientId } = useSelect(
 		( select ) => {
@@ -44,14 +48,19 @@ function ColumnEdit( {
 		[ clientId ]
 	);
 
-	const { updateBlockAttributes } = useDispatch( blockEditorStore );
+	const widthWithUnit = Number.isFinite(width) ? width + '%' : width;
 
-	const widthWithUnit = Number.isFinite( width ) ? width + '%' : width;
-	const blockProps = useBlockProps( {
+	const style = {
+		...(widthWithUnit ? { flexBasis: widthWithUnit } : {}),
+		...(bgStyle ? { backgroundColor: bgStyle } : {}),
+	};
+
+	const blockProps = useBlockProps({
 		attributes,
 		className: classes,
-		style: widthWithUnit ? { flexBasis: widthWithUnit } : undefined,
-	} );
+		style: Object.keys(style).length ? style : undefined,
+	});
+
 
 	const columnsCount = columnsIds.length;
 	const currentColumnPosition = columnsIds.indexOf( clientId ) + 1;
